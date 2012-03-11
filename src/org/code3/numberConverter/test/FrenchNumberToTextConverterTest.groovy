@@ -1,5 +1,7 @@
-packageorg.code3.numberConverter.test 
-import org.code3.numberConverter.FrenchNumberConverter
+package org.code3.numberConverter.test 
+
+import org.code3.numberConverter.FrenchNumberToTextConverter
+
 
 assert countUnits(31) == 1
 assert countTens(432) == 3

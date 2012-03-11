@@ -1,6 +1,6 @@
 package org.code3.numberConverter
 
-class FrenchNumberToTextConverter implementes NumberToTextConverter{
+class FrenchNumberToTextConverter implements NumberToTextConverter{
 	
 def normalize = {s -> s.trim().replaceAll(/\s+/," ")}
 def countUnits = { number -> number %10 as int}
@@ -39,7 +39,7 @@ def convertUpToThousand = { number ->
     normalize("$hundreds $tensAndUnits")
 }
 
-def convert (Integer number){ 
+String convert (Integer number){ 
     def builder = new StringBuilder()
     def billions = countBillions(number)
     def bullionAsString = numberToString(convertUpToThousand(billions),upperNumberToWord.get(1000000000))
