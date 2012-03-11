@@ -1,0 +1,7 @@
+<ivy-module version="2.0">
+  <info organisation="org.code3" module="number"/>
+  <dependencies>
+    <dependency org="junit" name="junit" rev="4.10" />
+    <dependency org="org.codehaus.groovy" name="groovy-all" rev="1.8.6"/>
+    </dependencies>
+</ivy-module>
